@@ -1,4 +1,4 @@
-![Alt text](Lamdafuction1.png)
+![Alt text](ArchitectDiagram.png)
 
 ---
 # AWS Web Application Project
