@@ -1,5 +1,4 @@
-
-![Alt text](Architech Diagram.png)
+![Alt text](ArchitechDiagram.png)
 
 ---
 # AWS Web Application Project
