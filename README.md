@@ -83,6 +83,7 @@ This project demonstrates an end-to-end web application built using five differe
 ### 6. Update Lambda Function to Save Results in DynamoDB
 - Modify the Lambda function code to save the results of the math operation in DynamoDB.
   ![Alt text](PowerOfMathFuction-Lamda-Final.txt)
+  
 - Re-test the function and verify that the results are stored correctly in the DynamoDB table.
   ![Alt text](LamdaTestresult.png)
 
@@ -90,7 +91,8 @@ This project demonstrates an end-to-end web application built using five differe
 - Edit the `index.html` file to include CSS styles for improved user interface.
 - Add an input field where users can type the numbers for the math operation.
 - Implement a script to invoke the API Gateway from the frontend, making a request to the Lambda function to perform the operation and return the result.
-   ![Alt text](index.html)
+
+  ![Alt text](index.html)
   
 ## Running the Project
 
