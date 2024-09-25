@@ -35,19 +35,31 @@ This project demonstrates an end-to-end web application built using five differe
 
 ### 5. Grant Lambda Permission to Access DynamoDB
 - Assign a JSON policy to the Lambda function’s execution role to allow it to write results to DynamoDB.
-- The policy will look something like this:
+
   ```json
   {
-    "Version": "2012-10-17",
-    "Statement": [
-      {
+"Version": "2012-10-17",
+"Statement": [
+    {
+        "Sid": "VisualEditor0",
         "Effect": "Allow",
-        "Action": "dynamodb:PutItem",
-        "Resource": "arn:aws:dynamodb:REGION:ACCOUNT_ID:table/TableName"
-      }
+        "Action": [
+            "dynamodb:PutItem",
+            "dynamodb:DeleteItem",
+            "dynamodb:GetItem",
+            "dynamodb:Scan",
+            "dynamodb:Query",
+            "dynamodb:UpdateItem"
+        ],
+        "Resource": "YOUR-TABLE-ARN"
+    }
     ]
-  }
+}
   ```
+![Alt text](PermissionPolicy.png)
+![Alt text](Policy.png)
+
+
 - Attach this policy to the Lambda execution role in AWS IAM.
 
 ### 6. Update Lambda Function to Save Results in DynamoDB
