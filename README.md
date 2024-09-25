@@ -69,6 +69,8 @@ This project demonstrates an end-to-end web application built using five differe
    - Use a REST client (e.g., Postman) to invoke the API Gateway and ensure it triggers the Lambda function correctly.
 4. **Check DynamoDB Results**:
    - Verify that the math results are saved in DynamoDB.
+   
+![Alt text](PowerofMathWeb.png)
 
 ## Conclusion
 This project showcases how to integrate AWS services like Amplify, Lambda, API Gateway, IAM, and DynamoDB to build a functional web application from scratch. The application performs basic math operations, stores the results in a NoSQL database, and presents an interactive UI hosted on AWS.
