@@ -31,7 +31,6 @@ This project demonstrates an end-to-end web application built using five differe
 - Test the Lambda function by creating a test event in the Lambda console to ensure the math logic is correctly implemented.
    ![Alt text](Lamdatestevent.png)
    ![Alt text](LamdaTest.png)
-   ![Alt text](LamdaTestresult.png)
   
 ### 3. Use API Gateway to Invoke Lambda
 - Set up a REST API in AWS API Gateway to trigger the Lambda function.
@@ -52,11 +51,12 @@ This project demonstrates an end-to-end web application built using five differe
   ![Alt text](Dynamodbtable.png)
   ![Alt text](DBTable.png)
 - Design the table to store operation results with a unique identifier.
-  ![Alt text](DBTable.png)
+  ![Alt text](Savedata.png)
 
 ### 5. Grant Lambda Permission to Access DynamoDB
 - Assign a JSON policy to the Lambda function’s execution role to allow it to write results to DynamoDB.
-
+  ![Alt text](Executionrole.png)
+- Attach below policy to the Lambda execution role in AWS IAM.
 ```json
 {
 "Version": "2012-10-17",
@@ -80,18 +80,18 @@ This project demonstrates an end-to-end web application built using five differe
 ![Alt text](PermissionPolicy.png)
 ![Alt text](Policy.png)
 
-
-- Attach this policy to the Lambda execution role in AWS IAM.
-
 ### 6. Update Lambda Function to Save Results in DynamoDB
 - Modify the Lambda function code to save the results of the math operation in DynamoDB.
+  ![Alt text](PowerOfMathFuction-Lamda-Final.txt)
 - Re-test the function and verify that the results are stored correctly in the DynamoDB table.
+  ![Alt text](LamdaTestresult.png)
 
 ### 7. Update Frontend (index.html)
 - Edit the `index.html` file to include CSS styles for improved user interface.
 - Add an input field where users can type the numbers for the math operation.
 - Implement a script to invoke the API Gateway from the frontend, making a request to the Lambda function to perform the operation and return the result.
-
+   ![Alt text](index.html)
+  
 ## Running the Project
 
 1. **Deploy the Webpage**:
