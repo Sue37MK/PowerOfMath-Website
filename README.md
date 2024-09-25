@@ -1,4 +1,4 @@
-Here’s a structured `README.md` file for your AWS web application project using Amplify, Lambda, IAM, API Gateway, and DynamoDB:
+
 
 ---
 
@@ -74,6 +74,3 @@ This project demonstrates an end-to-end web application built using five differe
 ## Conclusion
 This project showcases how to integrate AWS services like Amplify, Lambda, API Gateway, IAM, and DynamoDB to build a functional web application from scratch. The application performs basic math operations, stores the results in a NoSQL database, and presents an interactive UI hosted on AWS.
 
----
-
-This README provides a clear guide for anyone reviewing or using your project. You can add more specific code snippets, deployment steps, or diagrams as needed.
