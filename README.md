@@ -1,7 +1,6 @@
 ![Alt text](Architect Diagram.png)
+
 ---
-
-
 # AWS Web Application Project
 
 ## Project Overview
