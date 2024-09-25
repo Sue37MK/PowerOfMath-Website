@@ -16,7 +16,7 @@ This project demonstrates an end-to-end web application built using five differe
 ## Project Setup and Workflow
 
 ### 1. Host Webpage on AWS Amplify
-- Create an `index.html` file for the web application’s frontend.
+- Create an `index.html` file for the web application’s frontend. Please refer to index-Original.html for code.
 - Use AWS Amplify to host the webpage.
 
   ![Alt text](Amplify-app.png)
@@ -82,7 +82,7 @@ This project demonstrates an end-to-end web application built using five differe
 
 ### 6. Update Lambda Function to Save Results in DynamoDB
 - Modify the Lambda function code to save the results of the math operation in DynamoDB.
-  ![Alt text](PowerOfMathFuction-Lamda-Final.txt)
+- Please refer to file name PowerOfMathFuction-Lamda-Final.txt for code.
   
 - Re-test the function and verify that the results are stored correctly in the DynamoDB table.
   ![Alt text](LamdaTestresult.png)
@@ -91,8 +91,8 @@ This project demonstrates an end-to-end web application built using five differe
 - Edit the `index.html` file to include CSS styles for improved user interface.
 - Add an input field where users can type the numbers for the math operation.
 - Implement a script to invoke the API Gateway from the frontend, making a request to the Lambda function to perform the operation and return the result.
+- Please refer to file name index.html for code.
 
-  ![Alt text](index.html)
   
 ## Running the Project
 
